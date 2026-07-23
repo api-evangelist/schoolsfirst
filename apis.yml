@@ -1,0 +1,44 @@
+aid: schoolsfirst
+url: https://raw.githubusercontent.com/api-evangelist/schoolsfirst/refs/heads/main/apis.yml
+name: SchoolsFirst FCU
+kind: company
+description: >-
+  SchoolsFirst Federal Credit Union is a federally chartered, member-owned credit
+  union headquartered in Tustin, California, serving educators and their families.
+  Founded in 1934 as Orange County Teachers Credit Union, it is the largest credit
+  union in California and one of the largest in the United States, with roughly
+  $31.9 billion in assets, over 1.4 million members, and about 70 branches. It
+  offers savings, checking, loans, mortgages, credit cards, and investment
+  services. Like most US credit unions, SchoolsFirst runs no first-party public
+  developer program: probes of developer.schoolsfirstfcu.org fail to resolve and
+  /developers returns 404, and its api.schoolsfirstfcu.org host is the member
+  online-banking login backend, not a documented API. Consumer-permissioned data
+  access is available only through open-finance aggregators (Plaid, Finicity, MX,
+  Akoya) rather than a direct API. No public FDX participation or CFPB Section 1033
+  data-access posture is documented at this time.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Credit Union
+- Open Finance
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.schoolsfirstfcu.org
+- type: LinkedIn
+  url: https://www.linkedin.com/company/schoolsfirst-federal-credit-union
+- type: Blog
+  url: https://www.schoolsfirstfcu.org/about-us/newsroom/
+- type: PrivacyPolicy
+  url: https://www.schoolsfirstfcu.org/privacy-policy/
+- type: Support
+  url: https://www.schoolsfirstfcu.org/contact-us
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

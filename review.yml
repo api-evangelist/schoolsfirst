@@ -1,0 +1,67 @@
+aid: schoolsfirst
+name: SchoolsFirst FCU
+review:
+  question: Does SchoolsFirst FCU expose a documented first-party public API or developer portal?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    SchoolsFirst Federal Credit Union publishes no first-party public developer
+    program, API documentation, or downloadable OpenAPI/Swagger specification.
+    Direct probes confirm this: developer.schoolsfirstfcu.org does not resolve
+    (curl exit / HTTP 000), https://www.schoolsfirstfcu.org/developers returns
+    HTTP 404, and the api.schoolsfirstfcu.org host returns HTTP 200 but is the
+    member online-banking login backend (an IBM/Volterra ADC endpoint that
+    redirects to /member-login/login), not a documented developer API.
+    Open Banking Tracker lists no API products for the institution and recommends
+    aggregator integration. Consumer-permissioned data access is available only
+    through US open-finance aggregators (Plaid, Finicity, MX, Akoya). No public
+    FDX (Financial Data Exchange) participation and no stated CFPB Section 1033
+    data-access posture were found. No authentication model is publicly documented
+    because there is no first-party API surface. This is an honest identity-only
+    record: aggregator-only access, no public API.
+  posture:
+    firstPartyDeveloperPortal: false
+    developerPortalURL: ''
+    downloadableSpec: false
+    specProvenance: none
+    fdxParticipant: false
+    cfpb1033Posture: not-documented
+    aggregatorAccess: true
+    aggregators:
+      - Plaid
+      - Finicity
+      - MX
+      - Akoya
+    authModel: none-documented
+  probes:
+    - url: https://developer.schoolsfirstfcu.org
+      status: '000'
+      note: Host does not resolve; no developer subdomain.
+    - url: https://www.schoolsfirstfcu.org/developers
+      status: '404'
+      note: No developers page.
+    - url: https://api.schoolsfirstfcu.org
+      status: '200'
+      note: Member online-banking login backend (redirects to /member-login/login), not a developer API.
+    - url: https://www.schoolsfirstfcu.org
+      status: '200'
+      note: Public marketing/member website.
+  transports:
+    - protocol: REST
+      documented: false
+      note: No public REST API is documented for third-party developers.
+    - protocol: FDX
+      documented: false
+      note: No documented FDX-conformant data-access API; data sharing occurs via aggregators.
+sources:
+  - url: https://www.openbankingtracker.com/provider/schoolsfirst-federal-credit-union-us
+    type: Reference
+    note: Lists no API products; recommends aggregator integration (Plaid and others).
+  - url: https://en.wikipedia.org/wiki/SchoolsFirst_Federal_Credit_Union
+    type: Reference
+    note: Institution facts - federal charter, Tustin CA, founded 1934, ~$31.9B assets, 1.4M+ members.
+  - url: https://www.schoolsfirstfcu.org
+    type: Website
+    note: Public member website; no developer or API section.
