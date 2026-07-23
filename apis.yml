@@ -25,10 +25,12 @@ tags:
 - Open Finance
 - Data Aggregation
 created: '2026-07-23'
-modified: '2026-07-23'
+modified: '2026-07-24'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/schoolsfirst-domain-security.yml
 - type: Website
   url: https://www.schoolsfirstfcu.org
 - type: LinkedIn
@@ -39,6 +41,10 @@ common:
   url: https://www.schoolsfirstfcu.org/privacy-policy/
 - type: Support
   url: https://www.schoolsfirstfcu.org/contact-us
+- type: SignUp
+  url: https://www.schoolsfirstfcu.org/join/become-a-member/how-to-join/
+- type: Login
+  url: https://online.schoolsfirstfcu.org/member-login/login
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
