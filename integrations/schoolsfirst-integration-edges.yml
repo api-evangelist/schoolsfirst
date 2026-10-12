@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/schoolsfirst/integrations
+- https://zapier.com/apps/schoolsfirst-fcu/integrations
+- https://n8n.io/integrations/schoolsfirst/
+- https://composio.dev/toolkits/schoolsfirst
+- https://monid.ai/tools/schoolsfirst
+checked:
+- https://composio.dev/toolkits/schoolsfirst
+- https://monid.ai/tools/schoolsfirst
+- https://n8n.io/integrations/schoolsfirst/
+- https://zapier.com/apps/schoolsfirst-fcu/integrations
+- https://zapier.com/apps/schoolsfirst/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
