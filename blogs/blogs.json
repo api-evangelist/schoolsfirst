@@ -2,6 +2,13 @@
   "repo": "schoolsfirst",
   "feeds": [
     {
+      "source": "https://www.schoolsfirstfcu.org/about-us/newsroom/",
+      "feed_url": "https://www.schoolsfirstfcu.org/about-us/newsroom/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://www.linkedin.com/company/schoolsfirst-federal-credit-union",
       "feed_url": "https://www.linkedin.com/company/schoolsfirst-federal-credit-union",
       "title": "",
@@ -10,5 +17,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
